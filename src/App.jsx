@@ -2,7 +2,7 @@ import { BrowserRouter,Routes,Route,NavLink } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import User from "./pages/User";
-import Profile from "./pages/profile";
+import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import './App.css';
