@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
-  const [second, setSecond] = useState(5);
+  const [second, setSecond] = useState(60);
   const [isActive, setIsActive] = useState(false);
   const [note, setNote] = useState('');
   const [history, setHistory] = useState(() => {
