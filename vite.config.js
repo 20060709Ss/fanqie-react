@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(),tailwindcss(),VitePWA({
     registerType:'autoUpdate',
     manifest:{
-      name:'我的专业番茄钟'，
+      name:'我的专业番茄钟',
       short_name:'番茄钟',
       description:'专注每一刻的效率工具',
       theme_color:'#ef4444',
