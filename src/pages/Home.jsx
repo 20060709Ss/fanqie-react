@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
-  const [second, setSecond] = useState(60);
+  const [second, setSecond] = useState(5);
   const [isActive, setIsActive] = useState(false);
   const [note, setNote] = useState('');
   const [history, setHistory] = useState(() => {
@@ -19,7 +19,10 @@ export default function Home() {
       }, 1000);
     } else if (second === 0) {
       setIsActive(false);
-      alert("专注时间结束，做的很好！");
+      const audio = new Audio('/soundreality-ding-411634.mp3');
+      audio.play().catch(error =>{
+        console.log("自动播放被拦截，这是正常现象：",error);
+      });
       navigate('/about');
     }
     return () => clearInterval(timer);
