@@ -19,7 +19,7 @@ function App(){
         <nav className="bg-white/60 backdrop-blur-md shadow-sm sticky top-0 z-50">
           <div className="max-w-2xl mx-auto px-4 py-3 flex justify-center gap-8">
             <NavLink to="/" className={navAction}>🏠 首页番茄钟</NavLink>
-            <NavLink to="/about" className={navAction}>👋 关于项目�</NavLink>
+            <NavLink to="/about" className={navAction}>👋 关于项目</NavLink>
             <NavLink to="/user/前端架构师" className={navAction}>👊🏻 我的主页</NavLink>
           </div>
         </nav>
